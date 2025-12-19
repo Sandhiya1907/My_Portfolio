@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandhiya A | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS STYLES */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e293b;
+            --bg-color: #f8fafc;
+            --text-color: #334155;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 10%;
+            background: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 10%;
+            text-align: center;
+            background: linear-gradient(135deg, #ffffff 0%, #eff6ff 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Sections */
+        .container {
+            padding: 80px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--secondary-color);
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            nav { padding: 1rem 5%; }
+            .nav-links { display: none; } /* Simplified for mobile */
+            .container { padding: 50px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SANDHIYA A</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Sandhiya A</h1>
+        <p>Aspiring Engineer specializing in Electrical, Electronics and Communications [cite: 12]</p>
+        <a href="mailto:sandhiyaayyappan1907@gmail.com" class="cta-btn">Contact Me</a>
+    </header>
+
+    <section id="about" class="container">
+        <h2>Education</h2>
+        <div class="skill-card" style="text-align: left; max-width: 800px; margin: 0 auto;">
+            <h3 style="color: var(--primary-color);">Sri Eshwar College of Engineering [cite: 11]</h3>
+            <p><strong>Bachelor of Engineering - BE [cite: 12]</strong></p>
+            <p>Electrical, Electronics and Communications Engineering [cite: 12]</p>
+            <p><em>September 2024 - June 2028 [cite: 13]</em></p>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Top Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Java [cite: 5]</h3>
+            </div>
+            <div class="skill-card">
+                <h3>Python [cite: 6]</h3>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript [cite: 7]</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--secondary-color); color: white; text-align: center; padding: 40px 10%;">
+        <p>Connect with me on <a href="https://www.linkedin.com/in/sandhiya-a-b60a92333" style="color: #60a5fa;">LinkedIn</a> [cite: 3]</p>
+        <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">© 2024 Sandhiya A. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
